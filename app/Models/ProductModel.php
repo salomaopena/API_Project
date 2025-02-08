@@ -19,6 +19,7 @@ class ProductModel extends Model
         'stock',
         'created_at',
         'updated_at',
+        'deleted_at',
     ];
 
     protected bool $allowEmptyInserts = false;
