@@ -15,6 +15,15 @@ class ApiResponse
         }
     }
 
+    public function validade_request($method){
+        //validate if the method is allowed
+
+        if($_SERVER['REQUEST_METHOD']!=strtoupper($method)){
+            echo $this->set_response_error(405, 'Method not allowed');
+            die(1);
+        }
+    }
+
     public function set_response($status = 200, $message = 'success', $data = [])
     {
         //api generic success
@@ -34,7 +43,7 @@ class ApiResponse
                 'timestamp'     => time(),
             ],
             'data'      => $data
-        ]);
+        ],JSON_PRETTY_PRINT);
     }
 
     public function set_response_error($status = 404, $message = 'error')
@@ -56,7 +65,7 @@ class ApiResponse
                 'timestamp'     => time(),
             ],
             'data'              => [],
-        ]);
+        ],JSON_PRETTY_PRINT);
     }
 
     private function _api_not_active()
@@ -75,6 +84,6 @@ class ApiResponse
                 'timestamp'     => time(),
             ],
             'data'              => [],
-        ]);
+        ],JSON_PRETTY_PRINT);
     }
 }
