@@ -115,8 +115,8 @@ class Api extends BaseController
         $post = json_decode(file_get_contents('php://input'), true);
 
         $data = $model->where('stock >=', $post['min'])
-                      ->where('stock <=', $post['max'])
-                      ->findAll();
+            ->where('stock <=', $post['max'])
+            ->findAll();
 
         //check if there are no products with stock between min_stock and max_stock
         if (empty($data)) {
@@ -127,16 +127,26 @@ class Api extends BaseController
         }
     }
 
-    public function add_product(){
+    public function add_product()
+    {
         //initialize response object
         $response = new ApiResponse();
         $response->validade_request('POST');
 
         //get products from database
         $model = new ProductModel();
+
         $post = json_decode(file_get_contents('php://input'), true);
 
-        $data = $model->insert($post);
+        $new_product = [
+            'product_name'      => $post['product_name'],
+            'category'          => $post['category'],
+            'price_per_unit'    => $post['price_per_unit'],
+            'stock'             => $post['stock'],
+            'created_at'        => date('Y-m-d H:i:s'),
+        ];
+
+        $data = $model->insert($new_product);
 
         if ($data) {
             //return the products as json response
