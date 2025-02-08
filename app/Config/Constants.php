@@ -77,3 +77,13 @@ defined('EXIT_USER_INPUT')     || define('EXIT_USER_INPUT', 7);     // invalid u
 defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8);       // database error
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9);      // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125);    // highest automatically-assigned error code
+
+//================================================================
+//custom constants
+//================================================================
+
+define('API_ACTIVE',        true);
+define('API_VERSION',       '1.0.0');
+define('API_NAME',          'Online');
+define('API_AUTHOR',        'Salomão Pena');
+define('API_KEY', 'your_api_key');
