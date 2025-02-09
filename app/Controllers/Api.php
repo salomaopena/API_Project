@@ -165,7 +165,8 @@ class Api extends BaseController
     {
         //initialize response object
         $response = new ApiResponse();
-        $response->validade_request('POST');
+        //$response->validade_request('POST');
+        $response->validade_request('PUT');
 
         //get products from database
         $model = new ProductModel();

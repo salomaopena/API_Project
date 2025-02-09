@@ -87,3 +87,7 @@ define('API_VERSION',       '1.0.0');
 define('API_NAME',          'Online');
 define('API_AUTHOR',        'Salomão Pena');
 define('API_KEY', 'your_api_key');
+// http basic auth credentials
+define('API_USERNAME',      'ci_api_user');
+define('API_PASSWORD',      'huCLJ2fgqhFP7C2uh8mZdFul1Lh2MvLZ');
+

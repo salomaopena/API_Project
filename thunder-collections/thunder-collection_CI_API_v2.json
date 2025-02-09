@@ -1,0 +1,149 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "CI_API_v2",
+    "collectionId": "555a882c-85c0-4a1b-9415-be1a9091d559",
+    "dateExported": "2025-02-08T22:45:52.608Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2ace5999-3060-4311-875d-bb691615f0df",
+            "colId": "555a882c-85c0-4a1b-9415-be1a9091d559",
+            "containerId": "",
+            "name": "status",
+            "url": "http://localhost/API/public/status",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-02-08T19:01:52.189Z",
+            "modified": "2025-02-08T19:17:21.967Z",
+            "headers": []
+        },
+        {
+            "_id": "27d784b0-ba9f-494e-af6a-bf0246856fc5",
+            "colId": "555a882c-85c0-4a1b-9415-be1a9091d559",
+            "containerId": "",
+            "name": "all_products",
+            "url": "http://localhost/API/public/all_products",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-02-08T19:18:36.218Z",
+            "modified": "2025-02-08T19:18:53.409Z",
+            "headers": []
+        },
+        {
+            "_id": "ea5e8669-255d-4e62-afd9-6be114dc5d2b",
+            "colId": "555a882c-85c0-4a1b-9415-be1a9091d559",
+            "containerId": "",
+            "name": "get_product_by_id",
+            "url": "http://localhost/API/public/product",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-02-08T19:20:39.285Z",
+            "modified": "2025-02-08T22:34:28.027Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 5\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e10e6574-1666-424e-b715-c7886cea73d9",
+            "colId": "555a882c-85c0-4a1b-9415-be1a9091d559",
+            "containerId": "",
+            "name": "all_categories",
+            "url": "http://localhost/API/public/all_categories",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-02-08T19:39:18.176Z",
+            "modified": "2025-02-08T19:39:41.156Z",
+            "headers": []
+        },
+        {
+            "_id": "2d963b42-90d3-4f21-b876-4c9df790a4e4",
+            "colId": "555a882c-85c0-4a1b-9415-be1a9091d559",
+            "containerId": "",
+            "name": "all_products_by_category",
+            "url": "http://localhost/API/public/all_product_by_category",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2025-02-08T20:13:43.655Z",
+            "modified": "2025-02-08T20:16:02.470Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"category\":\"Doceis\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "dbd95d62-3ac2-4bf9-807d-8cc4a1c479fd",
+            "colId": "555a882c-85c0-4a1b-9415-be1a9091d559",
+            "containerId": "",
+            "name": "all_products_with_stock_between",
+            "url": "http://localhost/API/public/all_product_with_stock_between",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2025-02-08T20:41:37.657Z",
+            "modified": "2025-02-08T21:11:07.868Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"min\":\"1000\",\n  \"max\":\"3000\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "f6535503-a26d-41f5-b8bf-e0dc138b47fa",
+            "colId": "555a882c-85c0-4a1b-9415-be1a9091d559",
+            "containerId": "",
+            "name": "add_product",
+            "url": "http://localhost/API/public/add_product",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2025-02-08T21:17:24.752Z",
+            "modified": "2025-02-08T22:27:04.117Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"product_name\":\"Carne de galinha\",\n  \"category\":\"Carnes\",\n  \"price_per_unit\":\"10.90\",\n  \"stock\":\"1200\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "6e420143-c682-4ee7-9651-1fd6cd5e0971",
+            "colId": "555a882c-85c0-4a1b-9415-be1a9091d559",
+            "containerId": "",
+            "name": "update_product",
+            "url": "http://localhost/API/public/update_product",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2025-02-08T21:44:37.068Z",
+            "modified": "2025-02-08T22:24:47.520Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":1,\n  \"product_name\":\"Bola de doce\",\n  \"category\":\"Doceis\",\n  \"price_per_unit\":\"10.90\",\n  \"stock\":\"12500\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d897aac9-9ddd-486b-976e-a8c6b14f27e0",
+            "colId": "555a882c-85c0-4a1b-9415-be1a9091d559",
+            "containerId": "",
+            "name": "delete_product",
+            "url": "http://localhost/API/public/delete_product",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2025-02-08T21:57:29.275Z",
+            "modified": "2025-02-08T22:34:13.748Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 5\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "JtI1QFKgZi92t2-Vnw3JXunxhlqcT4Z90j_XCHkyoVn9lrN-JTK4z4AI_3Oskd508qM-9PoZFcIyI7_czpU2cA"
+}
