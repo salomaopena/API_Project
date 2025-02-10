@@ -15,7 +15,7 @@ class ApiKeys extends Migration
                 'constraint' => 11, 
                 'auto_increment' => TRUE
             ],
-            'project_name' => [
+            'project_id' => [
                 'type' => 'VARCHAR',
                 'constraint' => 255
             ],
